@@ -34,7 +34,7 @@ export const Form = styled.form`
 		padding: 0.5rem 1rem;
 		font-size: 1rem;
 		color: #321d7c;
-		border: none;
+		border: ${(props) => (props.error ? "1px solid #f64c90" : "none")};
 		border-radius: 8px 0 0 8px;
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 
@@ -85,5 +85,57 @@ export const SubmitButton = styled.button.attrs((props) => ({
 
 	&:hover {
 		background: #52d89f;
+	}
+`;
+
+export const DeleteButton = styled.button.attrs((props) => ({
+	type: "button",
+}))`
+	background: transparent;
+	border: none;
+	padding: 0.375rem 0.75rem;
+	padding-left: 0;
+	ouline: none;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		svg {
+			color: #f64c75 !important;
+		}
+	}
+
+	svg {
+		color: #f64c90 !important;
+	}
+`;
+
+export const List = styled.ul`
+	margin-top: 2rem;
+	list-style: none;
+
+	li {
+		padding: 15px 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		& + li {
+			border-top: 2px dashed #52d89f;
+		}
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				svg {
+					color: #52d90f !important;
+				}
+			}
+		}
+
+		svg {
+			color: #52d89f;
+		}
 	}
 `;
