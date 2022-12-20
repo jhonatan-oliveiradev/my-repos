@@ -74,7 +74,7 @@ Go to http://localhost:3000/ to see the result.
 
 # 🚧 Project:
 
-### [Live project!](https://my-repos.vercel.app/) 🚀
+### [Live project!](https://my-repos-two.vercel.app/) 🚀
 
 # 🎨 Prototype:
 
