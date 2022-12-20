@@ -12,6 +12,20 @@ export default createGlobalStyle`
     min-height: 100%;
   }
 
+  ::-webkit-scrollbar {
+    width: 0.625rem;
+    background: #161B22;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #63f5b8;
+    border-radius: 0.3125rem;
+
+    &:hover {
+      background: #52d89f;
+    }
+  }
+
   body {
     background: #161B22;
     font-size: 1rem;
